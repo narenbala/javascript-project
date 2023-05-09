@@ -1,10 +1,15 @@
+body{
+    margin: 0px;
+}
 .game{
     display: flex;
 }
-.float{
+#moving{
     position: absolute;
     width: 200px;
     height: 200px;
+    top: 0px;
+    left: 0px;
     background-color: pink;
 }
 .box{
@@ -35,51 +40,51 @@
     grid-template-rows: 50px 50px;
     gap: 10px;
 }
-.button1, .button2, .button3, .button4{
+#btn1, #btn2, #btn3, #btn4{
     width: 150px;
     height: 50px;
     border: 2px solid fuchsia;
     border-top-color: burlywood;
     border-left-color: burlywood;
-    text-align: center;
 }
-.button1{
+#btn1{
     grid-column: 2 / 3;
 }
-.button2{
+#btn2{
     grid-row: 2 / 3;
 }
-.button3{
+#btn3{
     grid-row: 2 / 3;
 }
-.button4{
+#btn4{
     grid-row: 2 / 3;
 }
-.button1 p, .button2 p, .button3 p, .button4 p{
+#btn1 p, #btn2 p, #btn3 p, #btn4 p{
     width: 0px;
     height: 0px;
 }
-.button1 p{
+#btn1 p{
     border-bottom: 30px solid cornflowerblue;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    margin: 10px 55px;
+    margin: 10px 50px;
 }
-.button2 p{
+#btn2 p{
     border-bottom: 20px solid transparent;
     border-top: 20px solid transparent;
     border-right: 30px solid cornflowerblue;
-    margin: 5px 55px;
+    margin: 5px 50px;
 }
-.button3 p{
+#btn3 p{
     border-top: 30px solid cornflowerblue;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    margin: 10px 55px;
+    margin: 10px 50px;
 }
-.button4 p{
+#btn4 p{
     border-bottom: 20px solid transparent;
     border-left: 30px solid cornflowerblue;
     border-top: 20px solid transparent;
-    margin: 5px 55px;
+    margin: 5px 50px;
 }
+
