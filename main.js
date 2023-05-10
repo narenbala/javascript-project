@@ -1,8 +1,10 @@
+
+
 function moveRight() {
 	var elem = document.getElementById("moving");
 	var rect = elem.getBoundingClientRect();
 	var pos = rect.left;
-	var id = setInterval(frameRight, 5);
+	var id = setInterval(frameRight, 500);
 	function frameRight() {
         if(pos == 500){
             clearInterval(id);
